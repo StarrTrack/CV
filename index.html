@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Резюме — Старр Пётр</title>
+    <meta
+      name="description"
+      content="Резюме Старр Петр — frontend developer."
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__inner header__inner--container--max">
+        <div class="header__left">
+          <h1 class="header__title header__title--size--large">
+            Старр Петр Александрович
+          </h1>
+          <p class="header__subtitle header__subtitle--muted">
+            Frontend Developer · Product Owner
+          </p>
+        </div>
+
+        <div class="header__right">
+          <a
+            class="btn btn--primary header__download header__download--mod--small"
+            id="downloadCvBtn"
+            href="/assets/Resume_Petr_Starr.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Скачать резюме в формате PDF"
+            >Скачать PDF</a
+          >
+
+          <button
+            class="burger burger--icon"
+            id="burgerBtn"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+          >
+            <span class="burger__box"><span class="burger__inner"></span></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="nav" id="topNav" aria-hidden="true">
+        <div class="nav__inner nav__inner--container--max">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#about">О себе</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#skills">Навыки</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#projects">Проекты</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#experience">Опыт</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#education">Образование</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section id="about" class="section section--about">
+        <div class="container container--narrow">
+          <h2 class="section__title">О себе</h2>
+          <p class="text">
+            Опытный продуктовый менеджер и руководитель IT-продуктов с более чем
+            5-летним опытом в digital и разработке. Запускал продукты с нуля,
+            формировал команды, защищал решения на уровне руководства. С апреля
+            2025 года активно развиваюсь как
+            <strong>frontend developer</strong> — ежедневно обучаюсь и создаю
+            проекты с использованием современного JavaScript-стека (React,
+            Node.js). Ищу возможность применить технические навыки и
+            управленческий опыт в роли разработчика.
+          </p>
+        </div>
+      </section>
+
+      <section id="goal" class="section section--goal">
+        <div class="container">
+          <h3 class="section__subtitle">Цель</h3>
+          <p class="text">
+            Хочу развиваться как <strong>frontend developer</strong> с упором на
+            современный JavaScript-стек и новые технологии.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="section section--skills">
+        <div class="container container--cards">
+          <h2 class="section__title">Навыки</h2>
+          <div class="cards">
+            <article class="card card--skills">
+              <h4 class="card__title">Frontend</h4>
+              <p class="card__text">
+                HTML5 · CSS3 · SCSS · JavaScript (ES6+) · React · TypeScript
+              </p>
+            </article>
+
+            <article class="card card--skills">
+              <h4 class="card__title">Backend</h4>
+              <p class="card__text"><s>Node.js · REST API · PostgreSQL</s></p>
+            </article>
+
+            <article class="card card--skills">
+              <h4 class="card__title">Инструменты</h4>
+              <p class="card__text">
+                Git · Webpack · Vite · StackBlitz · <s>Docker</s> · Figma
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section section--projects">
+        <div class="container container--narrow">
+          <h2 class="section__title">Проекты</h2>
+
+          <article class="project project--item project--item--type--layout">
+            <h4 class="project__title">Адаптивная верстка по макету (Figma)</h4>
+            <p class="project__desc">
+              HTML5, SCSS (БЭМ), JavaScript, Webpack. Сверстал адаптивную
+              страницу (320 / 768 / 1440 px). Реализованы мобильное меню,
+              модальные окна, раскрывающиеся списки. Проект опубликован на
+              <a href="https://starrtrack.github.io/StarrCo/">GitHub Pages</a>.
+            </p>
+          </article>
+
+          <article
+            class="project project--item project--item--type--pinescript"
+          >
+            <h4 class="project__title">Трейдинг-скрипты на Pine Script</h4>
+            <p class="project__desc">
+              <a href="https://github.com/StarrTrack/TradingView-Pine-Script"
+                >TradingView Pine Scripts</a
+              >
+              — автоматизация торговли: RSI, дивергенции, визуализация точек
+              входа, TP/SL, Elliott Wave + FB и другие.
+            </p>
+          </article>
+
+          <article
+            class="project project--item project--item--type--githubsearch"
+          >
+            <h4 class="project__title">GitHub Repositories Finder</h4>
+            <p class="project__desc">
+              JS (ES6+), DOM API, Fetch API.
+              <a href="https://starrtrack.github.io/JavaScript-Autocomplete/"
+                >Автокомплит репозиториев</a
+              >, список добавленных репозиториев, дебаунс для оптимизации
+              запросов.
+            </p>
+          </article>
+
+          <article
+            class="project project--item project--item--type--jspractice"
+          >
+            <h4 class="project__title">JavaScript Practices</h4>
+            <p class="project__desc">
+              <a href="https://github.com/StarrTrack/JS-Practices"
+                >Несколько Web проектов:</a
+              >
+              Калькулятор, заметки, список, таймер.
+            </p>
+          </article>
+
+          <article class="project project--item project--item--type--react">
+            <h4 class="project__title">React Practice Project</h4>
+            <p class="project__desc">
+              React, TypeScript, SCSS, Vitest
+              <a href="https://stackblitz.com/@petr.starr"
+                >Разработал учебные приложения на React.</a
+              >
+              Изучил ключевые паттерны React (props, контекст, хуки),
+              компонентную структуру, тестирование.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="learning" class="section section--learning">
+        <div class="container container--narrow">
+          <h2 class="section__title">Обучение и развитие</h2>
+          <p class="text">
+            Самостоятельно изучаю frontend-разработку с апреля 2025 года — 4–6
+            часов в день. Формирую портфолио, выполняю учебные и pet-проекты.
+          </p>
+        </div>
+      </section>
+
+      <section id="experience" class="section section--experience">
+        <div class="container container--narrow">
+          <h2 class="section__title">Опыт работы</h2>
+
+          <div class="experience">
+            <div class="experience__item">
+              <h4 class="experience__role">
+                Компания ООО "С-Маркетинг" — Менеджер проектов →
+                Продукт-менеджер / Product Owner → Руководитель продукта
+              </h4>
+              <p class="experience__period">Москва — 2019–2025</p>
+              <ul class="experience__list">
+                <li>
+                  Анализ и обработка данных рекламных кампаний с Power Query
+                  (M).
+                </li>
+                <li>Настройка и автоматизация отчетности в Qlik Sense.</li>
+                <li>
+                  Полная ответственность за продукты: Автокреатив, Автопилот,
+                  Таск-трекер.
+                </li>
+                <li>
+                  Проведение тендеров, подбор и управление командами разработки.
+                </li>
+                <li>
+                  Защита продуктов на проектных комитетах (финансы и продуктовая
+                  стратегия).
+                </li>
+              </ul>
+              <p class="experience__result">
+                <strong>Результаты:</strong> запустил несколько IT-продуктов с
+                нуля; сформировал и возглавил несколько команд разработки;
+                получил глубокий опыт управления продуктами и взаимодействия с
+                техническими командами.
+              </p>
+            </div>
+
+            <div class="experience__item">
+              <h4 class="experience__role">
+                Компания ООО "Ай-Контекст" — Менеджер по работе с клиентами →
+                Менеджер по работе с ключеавми клиентами → Руководитель группы
+                контекстной рекламы
+              </h4>
+              <p class="experience__period">Москва — 2015–2019</p>
+              <ul class="experience__list">
+                <li>
+                  Разработка стратегии и управление рекламными кампаниями
+                  (Google Ads, Яндекс.Директ, FB, MT, VK).
+                </li>
+                <li>
+                  Анализ рынка и конкурентов, определение целевых аудиторий.
+                  Поиск инновационных решений и внедрение их в практику.
+                </li>
+                <li>
+                  Оптимизация кампаний, управление бюджетами, контроль
+                  эффективности, разработка собственной отчетности с помощью
+                  Power Query.
+                </li>
+                <li>
+                  Руководство командой (3–5 специалистов), обучение и мотивация
+                  сотрудников.
+                </li>
+                <li>
+                  Ведение крупных клиентов: ПАО Сбербанк, ХоумКредит банк,
+                  Ренессанс банк, LaRedoute, Юлмарт
+                </li>
+              </ul>
+              <p class="experience__result">
+                <strong>Результаты:</strong> обеспечил ежегодный рост ключевых
+                показателей (KPI) у ключевых клиентов на 5-7% через внедрение
+                новых стратегий и оптимизацию процессов. Успешно продлил
+                контракты с ключевыми клиентами на 3 года, выиграв ряд
+                конкурентных тендеров.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section section--education">
+        <div class="container container--narrow">
+          <h2 class="section__title">Образование</h2>
+          <p class="text">
+            <strong>МГИУ</strong> — Экономика и управление на предприятии в
+            машиностроении. Квалификация: экономист-менеджер. Год окончания:
+            2015.
+          </p>
+        </div>
+      </section>
+
+      <section id="contacts" class="section section--contacts">
+        <div class="container container--narrow">
+          <h2 class="section__title">Контакты</h2>
+          <ul class="contacts">
+            <li class="contacts__item">
+              Телефон: <a href="tel:+79671275606">+7 (967) 127-56-06</a>
+            </li>
+            <li class="contacts__item">
+              Email:
+              <a href="mailto:petr.starr@gmail.com">petr.starr@gmail.com</a>
+            </li>
+            <li class="contacts__item">
+              Telegram:
+              <a href="https://t.me/pstarr" target="_blank" rel="noopener"
+                >@pstarr</a
+              >
+            </li>
+            <li class="contacts__item">
+              GitHub:
+              <a
+                href="https://github.com/StarrTrack"
+                target="_blank"
+                rel="noopener"
+                >github.com/StarrTrack</a
+              >
+            </li>
+            <li class="contacts__item">
+              StackBlitz:
+              <a
+                href="https://stackblitz.com/@petr.starr"
+                target="_blank"
+                rel="noopener"
+                >stackblitz.com/PetrStarr</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container container--narrow">
+        <p class="copyright">© Пётр Старр · Резюме 2025</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
